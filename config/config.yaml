@@ -1,0 +1,10 @@
+run:
+  timestamp: ${now:%Y%m%d-%H%M%S}
+  run_name: Default_Run_Name
+
+hydra:
+  run:
+    dir: output/${now:%Y%m%d-%H%M%S}
+  sweep:
+    dir: output/${now:%Y%m%d-%H%M%S}
+    subdir: version_${hydra.job.num}
