@@ -44,8 +44,8 @@ python .\entrypoint.py run.run_name=McLaren
 ## Setup and run with uv
 
 ```powershell
-uv venv .venv_uv
-.\.venv_uv\Scripts\Activate.ps1
+uv venv
+.\.venv\Scripts\Activate.ps1
 uv pip install -r .\requirements.txt
 python .\entrypoint.py
 ```
