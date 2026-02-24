@@ -6,7 +6,7 @@ from omegaconf import DictConfig
 @hydra.main(version_base=None, config_path="config", config_name="config")
 def main(cfg: DictConfig):
     task = Task.init(project_name="uv-hydra-testing", task_name=cfg.run.run_name)
-    # task.set_packages("requirements.txt")
+    task.set_packages("requirements.txt")
 
     print("Hello, Hydra and ClearML!")
     print(cfg)
